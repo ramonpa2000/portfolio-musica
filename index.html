@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramón Peña Agrest - Music Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #222222;
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.85);
+            text-align: center;
+            padding: 100px 20px;
+        }
+        header img {
+            border-radius: 50%;
+            border: 5px solid #8B5E3C;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+        }
+        header h1 {
+            margin: 20px 0 10px;
+            font-size: 2.5em;
+            color: #3E5C4B;
+            font-family: 'Playfair Display', serif;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: rgba(62, 92, 75, 0.95);
+            padding: 10px;
+            text-align: center;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #D9CBB5;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.85);
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        .videos iframe {
+            width: 100%;
+            height: 400px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border: 3px solid #8B5E3C;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .social a {
+            color: #3E5C4B;
+            margin: 0 15px;
+            font-size: 2em;
+            transition: color 0.3s;
+        }
+        .social a:hover {
+            color: #8B5E3C;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form input, form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 2px solid #8B5E3C;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        form button {
+            background-color: #3E5C4B;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+        form button:hover {
+            background-color: #8B5E3C;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(62, 92, 75, 0.95);
+            color: white;
+        }
+        @media (max-width: 600px) {
+            .gallery {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#videos">Videos</a>
+        <a href="#gallery">Fotos</a>
+        <a href="#social">Redes</a>
+        <a href="#contact">Contacto</a>
+    </nav>
+
+    <header>
+        <img src="_N114596.jpg" alt="Foto de Ramón">
+        <h1>Ramón Peña Agrest</h1>
+        <p>Cantante, compositor y multiinstrumentista argentino.</p>
+    </header>
+
+    <section id="videos" class="videos">
+        <h2>Videos</h2>
+        <iframe src="https://www.youtube.com/embed/h7j-PtTUVoI" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/t6q9sOFefd8" frameborder="0" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/Y9YZym6H98M" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Fotos</h2>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <img src="https://via.placeholder.com/300x200" alt="Foto 1">
+            <img src="https://via.placeholder.com/300x200" alt="Foto 2">
+            <img src="https://via.placeholder.com/300x200" alt="Foto 3">
+            <img src="https://via.placeholder.com/300x200" alt="Foto 4">
+        </div>
+    </section>
+
+    <section id="social" class="social">
+        <h2>Redes Sociales</h2>
+        <a href="https://www.instagram.com/ramonpa_/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@ramonpa" target="_blank"><i class="fab fa-youtube"></i></a>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        © 2025 Ramón Peña Agrest. Todos los derechos reservados.
+    </footer>
+</body>
+</html>
